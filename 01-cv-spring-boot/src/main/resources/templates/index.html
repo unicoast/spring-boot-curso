@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mi CV</h1>
+    <p th:text="'Hola, ' + ${name} + ' !'"></p>
+    <p th:if="${name.length < 3}" style="color: red">Error, el nombre tiene menos de 3 letras</p>
+<!--    <p th:text="${person.firstName}"></p>-->
+<!--    <p th:text="${person.lastName}"></p>-->
+<!--    <p th:text="${person.profession}"></p>-->
+</body>
+</html>
